@@ -1,9 +1,9 @@
 import cv2
 import numpy as np
 
-imgpath = "C:\\Users\\Lenovo\\Pictures\\Saved Pictures\\nature1.jpg"
+imgpath = "" #path of image 1
 img1 = cv2.imread(imgpath)
-imgpath1 = "C:\\Users\\Lenovo\\Pictures\\Saved Pictures\\qrcode.png"
+imgpath1 = "" #path of image 2
 img2 = cv2.imread(imgpath1)
 
 m,n,o = img1.shape
