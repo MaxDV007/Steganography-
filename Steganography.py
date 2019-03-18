@@ -6,6 +6,10 @@ img1 = cv2.imread(imgpath)
 imgpath1 = "" #path of image 2
 img2 = cv2.imread(imgpath1)
 
+#Check if the two images are of same size.
+if img2.shape != img1.shape:    
+        raise ValueError('Image 1 and Image 2 should be of same size!')
+
 m,n,o = img1.shape
 B1 = img1[:,:,0] #Array of Blue of image 1
 G1 = img1[:,:,1] #Array of Green of image 1
